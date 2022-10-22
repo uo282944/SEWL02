@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>Versiones ASP.NET</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <meta name ="author" content ="Javier Novella Tomas" />
+    <meta name ="description" content ="Tabla sobre ASD.NET Core versiones e información sobre versiones" />
+    <meta name ="keywords" content ="tabla, ASP.NET, versiones" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <h1>ASP.NET Core</h1>
+    </header>
+
+    <nav>
+        <a accesskey="I" class="navegador" tabindex="1" href="index.html">Index</a>
+        <a accesskey="V" class="navegador" tabindex="2" href="ventajas.html">Ventajas</a>
+        <a accesskey="X" class="navegador" tabindex="3" href="versiones.html">Versiones</a>
+        <a accesskey="H" class="navegador" tabindex="4" href="historia.html">Historia</a>
+    </nav>
+
+    <section>
+        <h2>Versiones ASP.NET Core</h2>
+
+        <h3>¿Qué es .NET Standard?</h3>
+        <p>.NET Standard es una nueva especificación que viene a poner orden en el ecosistema de .NET.
+            Lo que implica es tener una especificación y una serie de reglas comunes para todas las bibliotecas de clases 
+            base existentes para este ecosistema.
+        </p>
+        <p>Esta necesidad es debida a la existente fragmentación de las distintas implementaciones de las bibliotecas de 
+            clases base que existen las diferentes plataformas .NET (.NET Framework, Mono usado en Xamarin, y .NET Core).
+            Debido a esto, el poder reutilizar código es muy complicado, por lo que el simple hecho de arreglar un bug o 
+            añadir nuevas funcionalidades, implicaba que se tuviera que hacer en cada una de estas plataformas, con el 
+            consiguiente incremento de tiempo de desarrollo y posibilidad de no estar completamente alineadas.
+        </p>
+
+        <h3>¿Qué es .NET5?</h3>
+        <p>.NET 5 va a ser la unificación de .NET Framework, .NET Core y Mono en una sola plataforma de desarrollo multiplataforma.
+            Esta evolución de .NET Core contará con una sola biblioteca de clases basada en .NET Standard, herramientas unificadas. 
+            Además, .NET contará con la posibilidad de interoperar con código escrito en otros lenguajes, como Java o Swift.
+            .NET 5 será la plataforma de desarrollo para la construcción de todo tipo de aplicaciones.
+            Podremos crear aplicaciones multiplataforma como aplicaciones y servicios web, escritorio, juegos, aplicaciones cloud, móviles…
+        </p>
+        <img src="multimedia/net5.png" alt="Icono historia ASP.NET Core">
+
+        <h3>Tabla de versiones</h3>
+        <table>
+            <caption>Las versiones existentes de .NET Core son las siguientes:</caption>
+            <tr>
+                <th>Version</th>
+                <th>Lanzamiento</th>
+            </tr>
+            <tr>
+                <td>.NET Core 1.0</td>
+                <td>06/2016</td>
+            </tr>
+            <tr>
+                <td>.NET Core 1.1</td>
+                <td>11/2016</td>
+            </tr>
+            <tr>
+                <td>.NET Core 2.0</td>
+                <td>08/2017</td>
+            </tr>
+            <tr>
+                <td>.NET Core 2.1</td>
+                <td>05/2018</td>
+            </tr>
+            <tr>
+                <td>.NET Core 2.2</td>
+                <td>12/2018</td>
+            </tr>
+            <tr>
+                <td>.NET Core 3.0</td>
+                <td>09/2019</td>
+            </tr>
+            <tr>
+                <td>.NET Core 3.1</td>
+                <td>12/2019</td>
+            </tr>
+            <tr>
+                <td>.NET 5</td>
+                <td>11/2020</td>
+            </tr>
+        </table>
+
+        <h3>¿Que versión tengo de .NET Core tengo?</h3>
+        <p>
+            En ocasiones es difícil saber la version de NET Core que tenemos. Aqui te facilitamos un video con la explicación detallada
+        </p>
+        <video controls>
+            <source src="multimedia/versionVideo.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+        </video>
+    </section>
+
+    <footer>
+        <h3>Más Información</h3>
+        <p><a href="https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-6.0">ASP.NET Core</a></p>
+    </footer>
+</body>
+</html>

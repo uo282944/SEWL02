@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>ASP.NET Core-Historia</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <meta name ="author" content ="Javier Novella Tomas" />
+    <meta name ="description" content ="Historia de ASP.NET CORE y formulario de datos de ASP.NET Core" />
+    <meta name ="keywords" content ="formulario, historia, ASP.NET" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+<body>
+    <header>
+        <h1>ASP.NET Core</h1>
+    </header>
+
+    <nav>
+        <a accesskey="I" class="navegador" tabindex="1" href="index.html">Index</a>
+        <a accesskey="V" class="navegador" tabindex="2" href="ventajas.html">Ventajas</a>
+        <a accesskey="X" class="navegador" tabindex="3" href="versiones.html">Versiones</a>
+        <a accesskey="H" class="navegador" tabindex="4" href="historia.html">Historia</a>
+    </nav>
+
+    <section>
+        <h2>Historia ASP.NET Core</h2>
+        
+
+        <h3>Historia de .NET</h3>
+        
+        <p>En el año 2001 se publican los estándares 334 y 335 en ECMA para el lenguaje de programación C# 
+            y el Common Language Runtime (CLR). En el año 2002, es liberado al mundo entero el .NET Framework 
+            1. En ese mismo año, el proyecto Mono comienza. Mono, tenía como objetivo ser una implementación de .NET en Linux.
+            En el año 2008, Microsoft anuncia el proyecto ASP.NET MVC como un proyecto open source. Durante la conferencia Build,
+            el creador de C#, Anders Hejlsberg, anuncia la liberación del compilador de C#, llamado Roslyn, como un proyecto open source.
+            En ese mismo año, comienza el proyecto .NET Core. Esto fue debido a que Microsoft no tenía una plataforma de desarrollo web robusta 
+            y de alto rendimiento que pudiera competir con otras.
+        </p>
+        <p>
+            En aquel momento existía, y existe a día de hoy, ASP.NET en el .NET Framework, pero dicha plataforma siempre se ha visto lastrada
+            negativamente, puesto que el .NET Framework un proyecto muy rígido y monolítico.
+            La empresa tomó la decisión de construir una plataforma de desarrollo web desde cero. Por esto, podemos asegurar que ASP.NET Core 
+            fue la causa detrás del impulso para crear .NET Core.
+            En 2016 Microsoft adquiere Xamarin y el proyecto Mono se une a la organización .NET Foundation.
+            En 2017, es liberado .NET Core 2.
+            Desde finales del año 2019 tenemos a nuestra disposición .NET Core 3.1, y para finales del año 2020 tendremos .NET 5 que va a ser 
+            la unificación del .NET Framework, .NET Core y Mono en una sola plataforma de desarrollo open source, de alto rendimiento y multiplataforma.
+        </p>
+
+        <h3>¿Cuál es el futuro de .NET y .NET Core?</h3>
+        <p>A través de muchos años, se han creado diversas plataformas .NET, como el .NET Framework, .NET Core y Mono, además de otras que, de alguna 
+            forma u otra, ayudaron a perfilar lo que es .NET hoy en día, como Silverlight, Windows Phone y el .NET Compact Framework.
+        </p>
+
+        <p>
+            Desde que se lanzó .NET Core 3, no se van a migrar más características de .NET Clásico a .NET Core (ni a .NET 5). Con lo que las siguientes 
+            tecnologías no tienen un equivalente en .NET Core.
+            Web Forms no tiene su equivalente Core con ASP.NET Core. Existe Blazor, que podríamos decir que es su sustituto, aunque no hay una migración directa.
+            Si quieres migrar un servicio WCF a .NET Core tendrías que utilizar Web API, que no sería de forma directa o gRPC, pero requerirá de un esfuerzo en 
+            rehacer todo tu código.
+            Si tienes proyectos creados con Workflow Foundation, no hay nada oficial en .NET Core, pero hay una versión Open Source de Workflow Foundation migrada
+            a .NET Core, el problema es que no es una migración hecha por Microsoft y no podemos saber si la comunidad que tiene detrás le dará un soporte suficiente 
+            como para arriesgarnos con nuestras aplicaciones.
+            Dicho esto, no hay una obligación en migrar tus aplicaciones actuales a .NET Core, si ya las tienes funcionando correctamente. Son plataformas diferentes,
+            y la migración directa puede llevarte más tiempo del que crees sobre todo si tienes alguna de las tecnologías Legacy anteriormente mencionadas.
+            Lo que sí que es recomendable es que si tienes que aprender .NET, aprendas directamente .NET Core, salvo que tengas que mantener aplicaciones Legacy, 
+            realmente se parecen mucho, pero a día de hoy si tienes que empezar por una de ellas lo recomendado es .NET Core y C#.
+            Si ya eres desarrollador de .NET y C#, aprender .NET Core no te costará en exceso y merece la pena.
+            Entonces el futuro es .NET Core, que se va a llamar .NET 5 cuando salga la siguiente versión, pero para comprenderlo todo necesito que entiendas que es
+            .NET Standard.
+        </p>
+
+        <h3>Formulario</h3>
+
+        <form>
+            <fieldset>
+            <legend> Datos Personales </legend>
+            <p><label for="nom">Nombre: <input id="nom"></label></p>
+            <p><label for="ap">Apellidos: <input id="ap"></label></p>
+            <p><label for="te">Telefono: <input id="te" type="tel"></label></p>
+            <p><label for="em">Email: <input id="em" type="email"></label></p>
+            </fieldset>
+            <fieldset>
+            <legend> ¿Te ha parecido interesante el contenido? </legend>
+            <p><label for="rd1"> <input id="rd1" type="radio" name="interes"> Si </label></p>
+            <p><label for="rd2"> <input id="rd2" type="radio" name="interes"> No </label></p>
+            </fieldset>
+            <fieldset>
+            <legend> ¿Que nuevo contenido te gustaría que añadieramos? </legend>
+            <p><label for="ch1"> <input id="ch1" type="checkbox"> Extensiones </label></p>
+            <p><label for="ch2"> <input id="ch2" type="checkbox"> Aplicaciones </label></p>
+            <p><label for="ch3"> <input id="ch3" type="checkbox"> Tutorial de descarga </label></p>
+            <p><label for="ch4"> <input id="ch4" type="checkbox"> Novedades </label></p>
+            </fieldset>
+            <p><label for="num">Valoranos<input id="num" type="number" min=1 max=10></label></p>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <footer>
+        <h3>Más Información</h3>
+        <p><a href="https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-6.0">ASP.NET Core</a></p>
+    </footer>
+    
+</body>
+</html>

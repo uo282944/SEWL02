@@ -1,0 +1,30 @@
+/*Javier Novella Tomas UO282944*/
+
+/*Especificidad: 001*/
+body{
+display: grid;
+grid-template-areas:
+    'header header'
+    'nav section'
+    'nav footer';
+}
+
+ /*Especificidad: 001*/
+header{
+    grid-area: header;
+    
+}
+ /*Especificidad: 001*/
+nav{
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+}
+ /*Especificidad: 001*/
+section{
+    grid-area: section;
+}
+/*Especificidad: 001*/   
+footer{
+    grid-area: footer;
+}

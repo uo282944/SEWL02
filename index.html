@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <title>ASP.NET Introduccion</title>
+
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <meta name ="author" content ="Javier Novella Tomas" />
+    <meta name ="description" content ="Introducción a ASP.NET Core" />
+    <meta name ="keywords" content ="ASP.NET Core, introduccion" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>ASP.NET Core</h1>
+    </header>
+    <nav>
+        <a accesskey="I" tabindex="1" href="index.html">Index</a>
+        <a accesskey="V" tabindex="2" href="ventajas.html">Ventajas</a>
+        <a accesskey="X" tabindex="3" href="versiones.html">Versiones</a>
+        <a accesskey="H" tabindex="4" href="historia.html">Historia</a>
+    </nav>
+
+    <section>
+        <h2>¿Qué es ASP.NET Core?</h2>
+    
+        <h3>Introducción</h3>
+        <p>ASP.NET Core es un framework web gratis de código abierto y con un mayor rendimiento que ASP.NET, 
+        desarrollado por Microsoft y la comunidad. Es un framework modular que se ejecuta completo tanto 
+        en el .NET Framework de Windows como en multiplataforma.</p>
+        <img src="multimedia/netlogo.png" alt="Icono ASP.NET Core">
+
+        <h3>Arquitectura</h3>
+        <p>Tiene una arquitectura modular que permite que podamos incluir únicamente lo necesario que requieren nuestras 
+        aplicaciones, haciendo que tengan un peso menor a la hora de ser desplegadas y que sea más sencilla su actualización
+         a través de updates de NuGet.</p>
+    
+        <p> Al ser multiplataforma, no depende de cosas específicas del sistema operativo, como sucede con el .NET Framework.</p>
+        
+        <h3>¿Para qué puedes usar .NET Core?</h3>
+        <p>.NET Core nos permite realizar todo tipo de aplicaciones, como aplicaciones web que podrás desplegar en Windows, Linux, Mac Os.
+        Podrás desplegar tus aplicaciones usando contenedores Docker en distintas plataformas Cloud como Azure, Amazon, GCP.
+        Puedes usarla para crear aplicaciones de escritorio UWP que te permitirá correr tu aplicación en Windows 10, XBOX y HoloLens compartiendo
+         el código y sin tener que reescribir tus bibliotecas.
+        Se puede usar para Internet Of Things, Inteligencia Artificial, desarrollo de juegos… </p>
+    </section>
+
+    <footer>
+        <h3>Más Información</h3>
+        <p><a href="https://learn.microsoft.com/es-es/aspnet/core/?view=aspnetcore-6.0">ASP.NET Core</a></p>
+    </footer>
+    
+</body>
+</html>

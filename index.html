@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Calculadora Milan</title>
+    <script src="CalculadoraMilan.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
+</head>
+<body>
+    <section>
+        <h1>Calculadora</h1>
+        <label for="resultado">Básica</label>
+        <input type="text" id="resultado" disabled />
+
+        <input type="button" value="ON/c" onClick = "calculadora.mBorrar(0)">
+        <input type="button" value="CE" onClick = "calculadora.mBorrar(1)">
+        <input type="button" value="+/-" onClick = "calculadora.masmenos()">
+        <input type="button" value="Raiz" onClick = "calculadora.raiz()">
+        <input type="button" value="%" onClick = "calculadora.porcentaje()">
+        <input type="button" value="7" onClick = "calculadora.digitos(7)">
+        <input type="button" value="8" onClick = "calculadora.digitos(8)">
+        <input type="button" value="9" onClick = "calculadora.digitos(9)">
+        <input type="button" value="x" onClick = "calculadora.multiplicacion()">
+        <input type="button" value="/" onClick = "calculadora.division()">
+        <input type="button" value="4" onClick = "calculadora.digitos(4)">
+        <input type="button" value="5" onClick = "calculadora.digitos(5)">
+        <input type="button" value="6" onClick = "calculadora.digitos(6)">
+        <input type="button" value="-" onClick = "calculadora.resta()">
+        <input type="button" value="MRC" onClick = "calculadora.mrc()">
+        <input type="button" value="1" onClick = "calculadora.digitos(1)">
+        <input type="button" value="2" onClick = "calculadora.digitos(2)">
+        <input type="button" value="3" onClick = "calculadora.digitos(3)">
+        <input type="button" value="+" onClick = "calculadora.suma()">
+        <input type="button" value="M-" onClick = "calculadora.mMenos()">
+        <input type="button" value="0" onClick = "calculadora.digitos(0)">
+        <input type="button" value="." onClick = "calculadora.punto()">
+        <input type="button" value="=" onClick = "calculadora.igual()">
+        <input type="button" value="M+" onClick = "calculadora.mMas()">
+    </section>
+</body>
+</html>

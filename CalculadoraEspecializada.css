@@ -1,0 +1,46 @@
+/*Especificidad: 001*/
+body{
+    display: flex;
+    justify-content: center;
+}
+/*Especificidad: 001*/
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.5em;
+    background-color: #40324d;
+    color: #ffffff;
+    padding: 1em;
+}
+/*Especificidad: 001*/
+input{
+    font-size: 20px;
+    color: #000000;
+    background-color: #72f69f;
+}
+/*Especificidad: 001*/
+h1{
+    grid-column: span 7;
+}
+/*Especificidad: 001*/
+label{
+    grid-column: span 6;
+}
+/*Especificidad: 001*/
+textarea{
+    resize: none;
+    font-size: 25px;
+    color: #000000;
+    background-color: #ffffff;
+    grid-column: span 7;
+    height: 6em;
+}
+/*Especificidad: 021*/
+input[type=button][value="enter"]{
+    grid-column: span 2;
+    grid-row: span 3;
+}
+/*Especificidad: 021*/
+input[type=button][value="Cambio"]{
+    grid-column: span 4;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio11</title>
+    <meta name ="author" content ="Javier Novella Tomas" />
+    <meta name ="description" content ="Ejercicio11" />
+    <meta name ="keywords" content ="javascript, ejercicio11, jquery, mapbox-api geolocalizacion" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="Ejercicio11.css" />
+    
+</head>
+<body>
+    <h1>Capitales del Mundo</h1>
+    <input type="button"  Value="Europa" onclick="ubicacion.mostrarMapa(23.1059600,53.5775300,3,'Europa')" />
+    <input type="button"  Value="Norte América" onclick="ubicacion.mostrarMapa(-99.7506700,41.5002800,2,'Norte America')" />
+    <input type="button"  Value="Sudamérica" onclick="ubicacion.mostrarMapa(-65.0000000,-17.0000000,2,'Sudamerica')" />
+    <input type="button"  Value="África" onclick="ubicacion.mostrarMapa(15.0000000,-1.0000000,2,'Africa')" />
+    <input type="button"  Value="Asia" onclick="ubicacion.mostrarMapa(74.766098,41.20438,2,'Asia')" />
+    <input type="button"  Value="Oceanía" onclick="ubicacion.mostrarMapa(133.0000000,-27.0000000,2,'Oceania')" />
+    <p id="map"></p>
+    <script src="Ejercicio11.js"></script>
+</body>
+</html>

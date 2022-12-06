@@ -1,0 +1,41 @@
+/*Javier Novella Tomas UO282944*/
+
+/*Especificidad: 001*/
+body {
+    display: grid;
+    grid-template-areas:
+        'h1'
+        'input'
+        'section'
+        'footer';
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    background-color: #d5f3ff;
+}
+/*Especificidad: 001*/
+h1{
+    grid-area: h1;
+    padding: 1em;
+    font-size: 3em;
+    color: #ffffff;
+    background-color: #0d0577;
+}
+/*Especificidad: 001*/
+section{
+    grid-area: section;
+}
+/*Especificidad: 001*/
+input{
+    grid-area: input;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #0d0577;
+}
+/*Especificidad: 001*/
+footer{
+    grid-area: footer;
+    padding: 0.2em;
+    color: #ffffff;
+    background-color: #216807;
+    font-size: 1em;
+}

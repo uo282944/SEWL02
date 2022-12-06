@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio7</title>
+    <meta name ="author" content ="Javier Novella Tomas" />
+    <meta name ="description" content ="Ejercicio7" />
+    <meta name ="keywords" content ="javascript, ejercicio7, jquery" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+</head>
+<body>
+    <h1>Alimerka</h1>
+    <h2>Carnicería Alimerka</h2>
+    <h3>Embutidos</h3>
+    <p>Gran selección de embutidos asturianos</p>
+    <table>
+        <caption>Precios embutidos:</caption>
+        <tr>
+            <th>Embutido</th>
+            <th>Precio($)</th>
+        </tr>
+        <tr>
+            <td>Jamón Serrano</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Salchichón</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Mortadela</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Cecina</td>
+            <td>3,5</td>
+        </tr>
+        <tr>
+            <td>Jamón York</td>
+            <td>1,25</td>
+        </tr>
+        <tr>
+            <td>Queso fresco</td>
+            <td>2,5</td>
+        </tr>
+        <tr>
+            <td>Queso curado</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Queso de cabra</td>
+            <td>3,5</td>
+        </tr>
+    </table>
+
+    <input type="button"  Value="Oculta párrafos y tabla" onclick="modificaciones.ocultar()" />
+    <input type="button"  Value="Mostrar párrafos y tabla" onclick="modificaciones.mostrar()" />
+    <input type="button"  Value="Cambiar a Mercadona" onclick="modificaciones.cambiarMercadona()" />
+    <input type="button"  Value="Cambiar a Alimerka" onclick="modificaciones.cambiarAlimerka()" />
+    <input type="button"  Value="Añadir parrafos" onclick="modificaciones.addElementos()" />
+    <input type="button"  Value="Eliminar parrafos y tabla" onclick="modificaciones.borrarElementos()" />
+    <input type="button"  Value="Recorrer todos los elementos y mostrar tipos" onclick="modificaciones.mostrarPadres()" />
+    <input type="button"  Value="Sumar filas y columnas de la tabla" onclick="modificaciones.juntarElementosTablas()" />
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicio12</title>
+    <meta name="author" content="Javier Novella Tomas">
+    <meta name="description" content="Ejercicio9">
+    <meta name="keywords" content="javascript, ejercicio9, jquery, xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio12.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio12.css">
+</head>
+<body>
+    <h1>Cargar Archivos</h1>
+    <label for="archivos">Introduce los archivos</label>
+    <input id="archivos" type="file" name="Archivos" onchange="cargarArchivos.verArchivos();" multiple="">
+
+    <section><h2>Ejemplo.json</h2><p>Tipo archivo: application/json</p><p>Tamaño: 530</p><h3>Contenido:</h3><pre>{
+    "clients": [
+        {
+            "first_name": "Singrid",
+            "last_name": "Mannock",
+            "age": 27,
+            "amount": 7.17
+        },
+        {
+            "first_name": "Joe",
+            "last_name": "Hinners",
+            "age": 31,
+            "amount": [
+                1.9,
+                5.5
+            ]
+        },
+        {
+            "first_name": "Theodoric",
+            "last_name": "Rivers",
+            "age": 36,
+            "amount": 1.11
+        }
+    ]
+}</pre></section><section><h2>Ejemplo.txt</h2><p>Tipo archivo: text/plain</p><p>Tamaño: 29</p><h3>Contenido:</h3><pre>Los días de la semana son 7.</pre></section><section><h2>Ejemplo.xml</h2><p>Tipo archivo: text/xml</p><p>Tamaño: 684</p><h3>Contenido:</h3><pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE poema SYSTEM "poema.dtd"&gt; 
+&lt;poema autor="Federico García Lorca" fecha="Abril 1915" lugar="Granada"&gt;
+&lt;titulo&gt;Alba&lt;/titulo&gt; 
+&lt;verso&gt;Mi corazón oprimido&lt;/verso&gt; 
+&lt;verso&gt;siente junto a la alborada&lt;/verso&gt; 
+&lt;verso&gt;el dolor de sus amores&lt;/verso&gt;
+&lt;verso&gt;Y el sueño de las distancias.&lt;/verso&gt;
+&lt;verso&gt;La luz de la aurora lleva&lt;/verso&gt;
+&lt;verso&gt;Semilleros de nostalgias&lt;/verso&gt;
+&lt;verso&gt;Y la tristeza sin ojos&lt;/verso&gt;
+&lt;verso&gt;De la médula del alma.&lt;/verso&gt;
+&lt;verso&gt;La gran tumba de la noche&lt;/verso&gt;
+&lt;verso&gt;Su negro velo levanta&lt;/verso&gt;
+&lt;verso&gt;Para ocultar con el día&lt;/verso&gt;
+&lt;verso&gt;La inmensa cumbre estrellada.&lt;/verso&gt;
+&lt;/poema&gt;
+</pre></section><footer>
+        <p>Realizado por Javier Novella Tomás-UO282944</p>
+    </footer>
+
+</body></html>

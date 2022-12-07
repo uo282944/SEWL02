@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicio7</title>
+    <meta name="author" content="Javier Novella Tomas">
+    <meta name="description" content="Ejercicio7">
+    <meta name="keywords" content="javascript, ejercicio7, jquery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css">
+</head>
+<body>
+    <h1>Alimerka</h1>
+    <input type="button" value="Oculta párrafos y tabla" onclick="modificaciones.ocultar()">
+    <input type="button" value="Mostrar párrafos y tabla" onclick="modificaciones.mostrar()">
+    <input type="button" value="Cambiar a Mercadona" onclick="modificaciones.cambiarMercadona()">
+    <input type="button" value="Cambiar a Alimerka" onclick="modificaciones.cambiarAlimerka()">
+    <input type="button" value="Añadir parrafos" onclick="modificaciones.addElementos()">
+    <input type="button" value="Eliminar parrafos y tabla" onclick="modificaciones.borrarElementos()">
+    <input type="button" value="Recorrer todos los elementos y mostrar tipos" onclick="modificaciones.mostrarPadres()">
+    <input type="button" value="Sumar filas y columnas de la tabla" onclick="modificaciones.juntarElementosTablas()">
+    <h2>Carnicería Alimerka</h2>
+    <h3>Embutidos</h3>
+    <p style="">Gran selección de embutidos asturianos. La mejor selección de animales</p><p>Jamón Serrano2Salchichón3Mortadela1Cecina3,5Jamón York1,25Queso fresco2,5Queso curado3Queso de cabra3,5</p><p>Productos 100% producidos en Asturias</p>
+    <table style="">
+        <caption>Precios embutidos:</caption>
+        <tbody><tr>
+            <th>Embutido</th>
+            <th>Precio($)</th>
+        </tr>
+        <tr>
+            <td>Jamón Serrano</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Salchichón</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Mortadela</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Cecina</td>
+            <td>3,5</td>
+        </tr>
+        <tr>
+            <td>Jamón York</td>
+            <td>1,25</td>
+        </tr>
+        <tr>
+            <td>Queso fresco</td>
+            <td>2,5</td>
+        </tr>
+        <tr>
+            <td>Queso curado</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Queso de cabra</td>
+            <td>3,5</td>
+        </tr>
+    </tbody></table>
+
+    <main>Etiqueta padre : &lt;BODY&gt; elemento : &lt;MAIN&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TD&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Etiqueta padre : &lt;TR&gt; elemento : &lt;TH&gt; valor: Etiqueta padre : &lt;TBODY&gt; elemento : &lt;TR&gt; valor: Etiqueta padre : &lt;TABLE&gt; elemento : &lt;TBODY&gt; valor: Etiqueta padre : &lt;TABLE&gt; elemento : &lt;CAPTION&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;TABLE&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;P&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;P&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;H3&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;H2&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;INPUT&gt; valor: Etiqueta padre : &lt;BODY&gt; elemento : &lt;H1&gt; valor: </main>
+
+
+</body></html>

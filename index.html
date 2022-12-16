@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <title>Ejercicio6</title>
+    <meta name="author" content="Javier Novella Tomas">
+    <meta name="description" content="Ejercicio6">
+    <meta name="keywords" content="php, ejercicio6, gestion bd">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Ejercicio6.css">
+</head>
+<body>
+    <h1>Gestion base de datos</h1>
+    <section>
+        <h2>Consola</h2>
+        <p>Retroalimentación del desarrollo de las distintas acciones:</p>
+        <p>INFORME:</p><p>Edad media: 33.571428571429</p>
+                        <p>%Hombre: 42.857142857143%</p>
+                        <p>%Mujer: 42.857142857143%</p>
+                        <p>%Otro: 14.285714285714%</p>
+                        <p>Valoración media: 6.2857142857143</p>
+                        <p>Nivel medio: 5.7142857142857</p>
+                        <p>%Realizado: 71.428571428571%</p>
+                        <p>Tiempo medio: 5:26</p>    </section>
+    <section>
+        <h2>Funcionalidades</h2>
+        <form action="#" method="post" name="botones">
+            <input type="submit" value="Crear BD" name="crearbd">
+            <input type="submit" value="Crear tabla" name="creartbl">
+            <input type="submit" value="Cargar CSV" name="cargar">
+            <input type="submit" value="Exportar CSV" name="exportar">
+        </form>
+    </section>
+    <section>
+        <h2>Inserción de datos</h2>
+        <form action="#" method="post" name="insercion">
+            <fieldset>
+                <legend> Datos Personales </legend>
+                <p><label for="dni">DNI: <input id="dni" name="dni"></label></p>
+                <p><label for="nom">Nombre: <input id="nom" name="nombre"></label></p>
+                <p><label for="ap">Apellidos: <input id="ap" name="apellidos"></label></p>
+                <p><label for="edad">Edad: <input id="edad" name="edad" type="number" min="0" max="120"></label></p>
+                <p><label for="te">Telefono: <input id="te" type="tel" name="telefono"></label></p>
+                <p><label for="em">Email: <input id="em" type="email" name="email"></label></p>
+                <p><label for="lvl">Nivel informático: <input id="lvl" name="nivel" type="number" min="0" max="10"></label></p>
+                <p><label for="sexo">Sexo(hombre;mujer;otro): <input id="sexo" name="sexo"></label></p>
+            </fieldset>
+            <fieldset>
+            <legend> Tarea </legend>
+                <p><label for="comp">Completada(NO=0;SI=1): <input id="comp" name="comp" type="number" min="0" max="1"></label></p>
+                <p><label for="tiem">Tiempo(mm:ss): <input id="tiem" name="tiempo"></label></p>
+                <label for="comentarios">Comentarios:</label>
+                <p> <textarea id="comentarios" name="comentarios"></textarea></p>
+                <label for="propuestas">Propuestas de mejora:</label>
+                <p> <textarea id="propuestas" name="propuestas"></textarea></p>
+                <p><label for="num">Valoración: <input id="num" name="valoracion" type="number" min="0" max="10"></label></p>
+            </fieldset>
+            <input type="submit" value="Insertar datos" name="insertar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Busqueda de datos</h2>
+        <form action="#" method="post" name="busqueda">
+            <p><label for="dnibusqueda">DNI: <input id="dnibusqueda" name="dnibusqueda"></label></p>
+
+            <input type="submit" value="Buscar datos" name="buscar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Modificar datos</h2>
+        <form action="#" method="post" name="actualizar">
+            <p><label for="dnimod">DNI de la fila a actualizar: <input id="dnimod" name="dnimod"></label></p>
+            <fieldset>
+                <legend> Datos Personales </legend>
+                <p><label for="nommod">Nombre: <input id="nommod" name="nombremod"></label></p>
+                <p><label for="apmod">Apellidos: <input id="apmod" name="apellidosmod"></label></p>
+                <p><label for="edadmod">Edad: <input id="edadmod" name="edadmod" type="number" min="0" max="120"></label></p>
+                <p><label for="temod">Telefono: <input id="temod" type="tel" name="telefonomod"></label></p>
+                <p><label for="emmod">Email: <input id="emmod" type="email" name="emailmod"></label></p>
+                <p><label for="lvlmod">Nivel informático: <input id="lvlmod" name="nivelmod" type="number" min="0" max="10"></label></p>
+                <p><label for="sexomod">Sexo(hombre;mujer;otro): <input id="sexomod" name="sexomod"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend> Tarea </legend>
+                <p><label for="compmod">Completada(NO=0;SI=1): <input id="compmod" name="compmod" type="number" min="0" max="1"></label></p>
+                <p><label for="tiemmod">Tiempo(mm:ss): <input id="tiemmod" name="tiempomod"></label></p>
+                <label for="comentariosmod">Comentarios:</label>
+                <p> <textarea id="comentariosmod" name="comentariosmod"></textarea></p>
+                <label for="propuestasmod">Propuestas de mejora:</label>
+                <p> <textarea id="propuestasmod" name="propuestasmod"></textarea></p>
+                <p><label for="nummod">Valoración: <input id="nummod" name="valoracionmod" type="number" min="0" max="10"></label></p>
+            </fieldset>
+            <input type="submit" value="Modificar datos" name="modificar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Borrar datos</h2>
+        <form action="#" method="post" name="borrar">
+            <p><label for="dniborrar">DNI: <input id="dniborrar" name="dniborrar"></label></p>
+
+            <input type="submit" value="Eliminar datos" name="eliminar">
+        </form>
+    </section>
+
+    <section>
+        <h2>Generar Informe</h2>
+        <form action="#" method="post" name="Informe">
+            <input type="submit" value="Generar informe" name="generar">
+        </form>
+    </section>
+    <footer>
+        <p>Realizado por Javier Novella Tomás-UO282944</p>
+    </footer>
+
+</body></html>

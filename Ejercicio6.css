@@ -1,0 +1,33 @@
+/*Especificidad: 001*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*Especificidad: 001*/
+h1{
+    background-color: #00003c;
+    color: #ffffff;
+}
+/*Especificidad: 001*/
+section{
+    margin: 0.5em;
+    border: 0.2em solid;
+    border-color: #000000;
+}
+/*Especificidad: 001*/
+form{
+    margin: 0.2em;
+}
+/*Especificidad: 001*/
+textarea{
+    resize: none;
+    color: #000000;
+    background-color: #ffffff;
+    height: 5em;
+    width: 18em;
+}
+/*Especificidad: 001*/
+footer{
+    background-color: #00003c;
+    color: #ffffff;
+}
